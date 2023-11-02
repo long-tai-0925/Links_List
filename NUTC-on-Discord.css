@@ -1,0 +1,51 @@
+#NUTC-on-Discord {
+  width: 85%;
+  margin: 20px auto 20px auto;
+  background-color: #222;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#NUTC-on-Discord .link-item {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#NUTC-on-Discord .link-item a:hover {
+  color: #ffffff;
+  background-color: #007BFF;
+}
+
+#NUTC-on-Discord .button-link {
+  color: #ffffff;
+  background-color: #333;
+  display: inline-block;
+  padding: 15px 25%;
+  text-decoration: none;
+  border-radius: 300px;
+  transition: color 0.4s, background-color 0.4s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+  min-width: 150px;
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#NUTC-on-Discord .button-link:hover {
+  color: #ffffff;
+  background-color: #007BFF;
+}
+
+#NUTC-on-Discord .button-img {
+    vertical-align: middle; /* 將圖片垂直居中對齊 */
+    margin-right: 5px;     /* 如果需要，添加右邊距以分隔圖片和文字 */
+}
+
+.img {
+    vertical-align: middle; /* 將圖片垂直居中對齊 */
+    margin-right: 5px;     /* 如果需要，添加右邊距以分隔圖片和文字 */
+}
