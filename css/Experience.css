@@ -1,0 +1,60 @@
+#Experience {
+  width: 85%;
+  margin: 20px auto 20px auto;
+  background-color: #222;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex; /* 添加 Flexbox 布局 */
+  flex-wrap: wrap; /* 允许多行布局 */
+  justify-content: center; /* 在水平方向上居中 */
+  align-items: center; /* 在垂直方向上居中 */
+}
+
+#Experience .logo-item {
+  flex: 1;
+  max-width: calc(30% - 90px);
+  margin: 15px;
+  text-align: center;
+  position: relative;
+}
+
+#Experience .img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  display: inline-block; /* 更改为 inline-block */
+  margin: 0 auto; /* 水平居中 */
+}
+
+#Experience .img-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 5px; /* 调整 padding 属性 */
+  box-sizing: content-box;
+  width: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center; /* 水平居中文本 */
+  /* 新增的樣式 */
+  white-space: nowrap; /* 文本不換行 */
+  z-index: 2;
+}
+
+#Experience .logo-item:hover .img-name {
+  opacity: 1; /* 鼠标悬停时显示 */
+}
+
+#Experience h2 {
+  display: block; /* 确保标题独占一行 */
+  width: 100%; /* 使标题占满一行宽度 */
+  margin-bottom: 20px; /* 添加一些底部间距 */
+}
+
+#Experience .link-item {
+  margin: 20px 0;
+  text-align: center;
+}
