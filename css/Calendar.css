@@ -1,23 +1,23 @@
-#NUTC-on-Discord {
+#Calendar {
   width: 85%;
-  margin: 20px auto 20px auto;
+  margin: 95px auto 20px auto;
   background-color: #222;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-#NUTC-on-Discord .link-item {
-  margin: 20px 0;
+#Calendar .link-item {
+  margin: 20px 15px;
   text-align: center;
 }
 
-#NUTC-on-Discord .link-item a:hover {
+#Calendar .link-item a:hover {
   color: #ffffff;
   background-color: #007BFF;
 }
 
-#NUTC-on-Discord .button-link {
+#Calendar .button-link {
   color: #ffffff;
   background-color: #333;
   display: inline-block;
@@ -30,34 +30,16 @@
   max-width: 200px;
   min-width: 150px;
   text-align: center;
-
   align-items: center;
   justify-content: center;
 }
 
-#NUTC-on-Discord .button-link:hover {
+#Calendar .button-link:hover {
   color: #ffffff;
   background-color: #007BFF;
 }
 
-#NUTC-on-Discord .button-img {
+#Calendar .button-img {
     vertical-align: middle; /* 將圖片垂直居中對齊 */
     margin-right: 5px;     /* 如果需要，添加右邊距以分隔圖片和文字 */
-}
-
-.img {
-    vertical-align: middle; /* 將圖片垂直居中對齊 */
-    margin-right: 5px;     /* 如果需要，添加右邊距以分隔圖片和文字 */
-}
-
-#topCoins {
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10vh;
-  margin-right: 10px; /* 添加文字间距 */
-}
-#Top {
-  margin: 0 10px; /* 左右各增加 10px 的间距 */
 }

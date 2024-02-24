@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
   margin-top: -3.5px;
-  text-align: center; /* 這裡將連結置中 */
+  text-align: center;
 }  
 
 a {
@@ -28,3 +28,6 @@ a {
   text-decoration: none;
 }
 
+.Footer {
+  text-align: center;
+}
