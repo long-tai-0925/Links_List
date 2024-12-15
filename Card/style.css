@@ -68,10 +68,7 @@
   }
 
   .卡片:nth-child(1) button {
-    background-color: #e8bba6;
-  }
-  .卡片:nth-child(2) button {
-    background-color: #8ab1ff;
+    background-color: #00aaff;
   }
   .卡片 .Youtube button {
     background-color: #f40000;
@@ -87,6 +84,9 @@
   }
   .卡片 .Facebook button {
     background-color: #1877f2;
+  }
+  .卡片 .Facebook button {
+    background-color: 紅色;
   }
   .卡片 button:hover {
     background: grey;
