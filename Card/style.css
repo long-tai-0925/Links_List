@@ -110,11 +110,11 @@ body {
     background-color: #ec613d;
 }
 .卡片 .Thread button {
-    background-color: #ffffff;
+    background-color: #333333;
 }
 
 .卡片 button:hover {
-    background: #333333;
+    background: #ffffff;
     transition: 0.5s;
     color: aliceblue;
 }
