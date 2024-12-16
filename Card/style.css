@@ -109,6 +109,9 @@ body {
 .卡片 .instagram button {
     background-color: #ec613d;
 }
+.卡片 .Thread button {
+    background-color: #ffffff;
+}
 
 .卡片 button:hover {
     background: #333333;
