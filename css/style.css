@@ -1,33 +1,128 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
-h1 {
-  background-color: #333;
-  color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-h2 {
-  margin-top: -3.5px;
-  text-align: center;
-}  
-
-a {
-  color: #ffffff;
-  text-decoration: none;
+.卡片 {
+    width: 300px;
+    height: min-content;
+    padding: 30px;
+    margin: 0 15px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.Footer {
-  text-align: center;
+.卡片 .頭像 {
+    width: 100%;
+    text-align: center;
+}
+
+.卡片 .頭像 img {
+    height: 150px;
+    margin: -100px 0 15px 0;
+    border-radius: 8px;
+    filter: drop-shadow(0 8px 8px);
+    transition: 0.2s;
+}
+
+.卡片:hover .頭像 img {
+    height: 200px;
+}
+
+.卡片 .主角 h1 {
+    color: #ffffff;
+    font-size: 33px;
+    letter-spacing: 0.5px;
+}
+
+.卡片 .主角 p {
+    color: #b3bac3;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.卡片 .資料 {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.卡片 .資料 h4 {
+    color: #4d84e3;
+    font-size: 15px;
+}
+
+.卡片 .個資 p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.卡片 button {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.卡片:nth-child(1) button {
+    background-color: #00aaff;
+}
+
+.卡片 .Youtube button {
+    background-color: #f40000;
+}
+
+.卡片 .Discord button {
+    background-color: #5865f2;
+}
+
+.卡片 .Twitter button {
+    background-color: #179cf0;
+}
+
+.卡片 .Twitch button {
+    background-color: #9046ff;
+}
+
+.卡片 .Facebook button {
+    background-color: #1877f2;
+}
+
+.卡片 .instagram button {
+    background-color: #ec613d;
+}
+
+.卡片 button:hover {
+    background: #333333;
+    transition: 0.5s;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1250px) {
+    body {
+        display: block;
+        align-items: center;
+    }
+
+    body .卡片 {
+        margin: 100px auto;
+    }
 }
