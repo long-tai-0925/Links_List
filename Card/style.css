@@ -129,3 +129,63 @@ body {
         margin: 100px auto;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* 針對手機設計的樣式 */
+    .卡片 {
+        width: 90%; /* 減少寬度，適應小螢幕 */
+        padding: 20px;
+        margin: 20px auto; /* 保持居中 */
+    }
+
+    .卡片 .頭像 img {
+        height: 120px; /* 縮小圖片尺寸 */
+    }
+
+    .卡片 .主角 h1 {
+        font-size: 25px; /* 縮小標題字體 */
+    }
+
+    .卡片 .主角 h4 {
+        font-size: 14px; /* 縮小副標題字體 */
+    }
+
+    .卡片 button {
+        height: 40px; /* 縮短按鈕高度 */
+        font-size: 14px; /* 縮小按鈕文字 */
+        margin-top: 10px; /* 增加按鈕間距 */
+    }
+
+    /* 隱藏額外裝飾 */
+    .卡片:hover .頭像 img {
+        height: 120px; /* 手機上禁用放大動畫 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* 超小螢幕的額外調整 */
+    .卡片 {
+        padding: 15px;
+    }
+
+    .卡片 .主角 h1 {
+        font-size: 20px; /* 繼續縮小標題 */
+    }
+
+    .卡片 .主角 h4 {
+        font-size: 12px; /* 縮小副標題 */
+        line-height: 1.5; /* 增加行距 */
+    }
+
+    .卡片 button {
+        height: 35px; /* 更緊湊的按鈕 */
+        font-size: 12px;
+    }
+
+    /* 調整按鈕間距 */
+    .卡片 .Facebook,
+    .卡片 .instagram,
+    .卡片 .Thread {
+        margin-bottom: 10px;
+    }
+}
