@@ -114,7 +114,7 @@ body {
 }
 
 .卡片 button:hover {
-    background: #ffffff;
+    background: #000000;
     transition: 0.5s;
     color: aliceblue;
 }
