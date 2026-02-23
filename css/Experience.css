@@ -6,53 +6,66 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   
+  /* Flexbox 佈局設定 */
   display: flex; 
   flex-wrap: wrap; 
-  justify-content: flex-start; /* 改為 flex-start 讓排列更整齊，或者 keep center */
-  align-items: flex-start; 
+  justify-content: center; /* 讓圖片整體在容器內居中 */
+  align-items: flex-start; /* 頂部對齊 */
+}
+
+#Experience h2 {
+  display: block; 
+  width: 100%; 
+  margin-bottom: 25px; /* 加大一點間距，避免太擠 */
+  text-align: center; /* 標題居中 */
 }
 
 #Experience .logo-item {
-  /* 關鍵修改：33.33% 代表一排三個 */
-  /* 減去 30px 是為了扣除左右兩邊各 15px 的 margin 空間 */
+  /* 關鍵：強制每行三個 (33.33%)，並扣除 margin 的空間 */
   flex: 0 0 calc(33.33% - 30px); 
   margin: 15px;
   text-align: center;
   position: relative;
-  box-sizing: border-box; /* 確保 padding 不會撐開寬度 */
+  box-sizing: border-box;
 }
 
 #Experience .img {
-  height: 60px; /* 稍微加大一點點，40px 在三排布局中可能太小 */
+  height: 50px; /* 稍微放大一點，40px 有點小 */
   width: auto;
   border-radius: 50%;
-  display: block; /* 改回 block 配合 margin: auto 居中 */
+  display: block; /* 使用 block 配合 margin: auto 居中 */
   margin: 0 auto; 
 }
 
 #Experience .img-name {
   position: absolute;
-  bottom: -25px; /* 移出圖片下方，避免遮擋 */
+  /* 定位在圖片下方 */
+  top: 100%; 
   left: 50%;
-  transform: translateX(-50%); /* 精準水平居中 */
-  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-50%); /* 完美的水平居中 */
+  margin-top: 8px; /* 文字與圖片的間距 */
+  
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
+  padding: 4px 10px; 
+  border-radius: 5px;
+  font-size: 12px;
+  
   opacity: 0;
-  transition: opacity 0.3s ease;
-  white-space: nowrap;
-  z-index: 2;
-  pointer-events: none; /* 避免文字框干擾滑鼠事件 */
+  visibility: hidden; /* 加上這個可以防止隱形狀態下被誤觸 */
+  transition: all 0.3s ease;
+  white-space: nowrap; 
+  z-index: 10;
+  pointer-events: none; /* 防止滑鼠移動到文字上時產生閃爍 */
 }
 
-/* 懸停效果不變 */
 #Experience .logo-item:hover .img-name {
-  opacity: 1;
+  opacity: 1; 
+  visibility: visible;
 }
 
-@media (max-width: 768px) {
-  #Experience .logo-item {
-    flex: 0 0 calc(50% - 30px); /* 平板/手機一排兩個 */
-  }
+#Experience .link-item {
+  width: 100%; /* 確保底部 link-item 獨佔一行 */
+  margin: 20px 0;
+  text-align: center;
 }
