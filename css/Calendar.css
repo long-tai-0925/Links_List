@@ -8,7 +8,7 @@
 }
 
 #Calendar .link-item {
-  margin: 20px 15px;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -30,6 +30,7 @@
   max-width: 200px;
   min-width: 150px;
   text-align: center;
+
   align-items: center;
   justify-content: center;
 }
