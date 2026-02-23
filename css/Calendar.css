@@ -43,8 +43,3 @@
     vertical-align: middle; /* 將圖片垂直居中對齊 */
     margin-right: 5px;     /* 如果需要，添加右邊距以分隔圖片和文字 */
 }
-
-#Calendar iframe {
-  margin: 20px 15px;
-  text-align: center;
-}
